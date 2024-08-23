@@ -1,23 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-This is Encoteki Front End
+This is Encoteki Homepage create with Next.js
 
 ## Getting Started
 
-First, run the development server:
+Node version required minimum 18.17.0
+
+First Install
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-## Deploy on Vercel
+To run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To build for production:
+
+```bash
+yarn build
+```
+
+To create static folder to build:
+
+```bash
+add this on next.config.mjs
+
+const nextConfig = {
+  output: 'export'
+}
+```
